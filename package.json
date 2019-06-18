@@ -1,0 +1,28 @@
+{
+  "name": "truemail",
+  "version": "1.0.0",
+  "description": "Email verification, One-time/Disposable/Temporary address detection",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/botaniQQQ/truemail.git"
+  },
+  "author": {
+    "name": "botaniQQQ"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/botaniQQQ/truemail/issues"
+  },
+  "homepage": "https://github.com/botaniQQQ/truemail#readme",
+  "keywords": [
+    "email",
+    "mail",
+    "verification",
+    "one-time",
+    "disposable",
+    "temporary",
+    "check",
+    "detection"
+  ]
+}
