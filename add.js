@@ -22,21 +22,27 @@ const req = http.get(options, function(res) {
         if (body) {
             body = JSON.parse(body.toString());
         }
+        let add = 0;
         if (body && body.length) {
             body.forEach(function (b) {
                 b = b.replace('@', '').trim();
                 if (db.indexOf(b) === -1) {
                     db.push(b);
                     console.log('+', b);
+                    add++;
                 }
                 else {
                     console.log('-', b);
                 }
             });
         }
-        fs.writeFile('./db.json', JSON.stringify(db.sort(), null, 2), function() {
-            console.log('The file was saved!');
-        });
+        if (add) {
+            fs.writeFile('./db.json', JSON.stringify(db.sort(), null, 2), function() {
+                console.log('Added ' + add + ' domains!');
+            });
+        } else {
+            console.log('No new domains!');
+        }
     })
 });
 req.on('error', function(e) {

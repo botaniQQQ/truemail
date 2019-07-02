@@ -11,11 +11,11 @@ npm i truemail
 const truemail = require('truemail');
 
 console.log(truemail('hello@gmail.com')); //=> true
-console.log(truemail('fake-mail@.com')); //=> false
-console.log(truemail('ter@daymail.life')); //=> false
+console.log(truemail('bad-mail@%%.com')); //=> false
+console.log(truemail('t@temp-mail.org')); //=> false
 ```
 
-#### If you want to help collect new addresses
+#### If you want to help collect new domains
 ```bash
 cd node_modules/truemail
 node ./add.js
@@ -32,11 +32,11 @@ node ./add.js
 - mailmetal.com
 - email-24x7.com
 + emailay.com
-The file was saved!
+Added 3 domains!
 ```
 
-`+` - new addresses
-`-` - old addresses
+`+` - new domain
+`-` - old domain
 
 Open <a href="https://github.com/botaniQQQ/truemail/issues">issues</a> and send this addresses.
 
