@@ -13,6 +13,11 @@ const truemail = require('truemail');
 console.log(truemail('hello@gmail.com')); //=> true
 console.log(truemail('bad-mail@%%.com')); //=> false
 console.log(truemail('t@temp-mail.org')); //=> false
+
+// whitelist = true
+console.log(truemail('hello@gmail.com', true)); //=> true
+console.log(truemail('my.email@gm.com', true)); //=> false
+console.log(truemail('t@zero-mail.org', true)); //=> false
 ```
 
 #### If you want to help collect new domains

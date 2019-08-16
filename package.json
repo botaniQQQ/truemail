@@ -1,6 +1,6 @@
 {
   "name": "truemail",
-  "version": "1.0.6",
+  "version": "1.1.7",
   "description": "Email verification, One-time/Disposable/Temporary address detection",
   "main": "index.js",
   "repository": {
